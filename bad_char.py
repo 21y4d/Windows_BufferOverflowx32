@@ -4,7 +4,7 @@ import sys
 BOF_Len = 250
 
 all_chars= ""
-bad_chars= [0x00]
+bad_chars= [0x00] #Keep updating this until you get unmodified shellcode
 
 for i in range(0x00, 0xFF+1):
     if i not in bad_chars:

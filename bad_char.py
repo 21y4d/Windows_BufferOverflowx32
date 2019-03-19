@@ -10,7 +10,7 @@ for i in range(0x00, 0xFF+1):
     if i not in bad_chars:
         all_chars += chr(i)
 
-with open("all_chars.bin", "wb") as f:
+with open("all_chars.bin", "wb") as f: #To be used with !mona compare
           f.write(all_chars)
 
 Buffer = "A"*BOF_Len + "B"*4 + all_chars
